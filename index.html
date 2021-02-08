@@ -9,10 +9,345 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
     <!-- Pour importer juste ce que tu veux -->
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
+
 <body>
+    <!-- Navbar fullwidth  fixed -->
+    <nav class="navbar is-fixed-top">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+            <img src="src/html-coding.png" alt="logo">
+            </a>
+            <div class="navbar-burger burger" id="btnNav" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+        </div>
+        
+        <div id="menuContent" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#">
+                    Accueil
+                </a>
+            </div>
+        
+            <div class="navbar-end">
 
+                <a class="navbar-item" href="#">
+                    À Propos
+                </a>
+                <a class="navbar-item" href="#">
+                    Mes Réalisations
+                </a>
+                <a class="navbar-item" href="#">
+                    Contact
+                </a>                     
 
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero home -->
+    <!-- on change le point de break de 768px à 1023px -->
+    <div class="columns is-desktop">
+        <div class="column is-6-desktop">  
+
+            <section id="home" class="hero is-fullheight">
+                <div class="hero-body">
+                    <div class="container has-text-centered">
+                        <h2 class="subtitle is-3">Bonjour</h2>
+                        <h1 class="title is-1">Je suis Jeanne S.</h1>
+                        <h2 class="subtitle is-2">Une dev Front-End de plus !</h2>
+                        <button class="button is-rounded is-medium" onclick="location.href='mailto:angeliquejeanne.simon@gmail.com';">Contacte-moi !</button>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        <div class="column is-6-desktop has-text-centered">
+            <img class="img-right" src="src/laptop-2559707_1920.jpg" alt="img accueil">
+        </div>
+    </div>
+
+    <!-- Section à Propos -->
+    <section class="container about">
+        <h2 class="title is-1 has-text-centered" style="font-family: kaushan script;">Qui suis-je ?</h2>
+    <!-- 128x128 donne hauteur et largeur 128x128 -->
+    <!-- image donne display block -->
+        <figure class="image container is-128x128">
+                <img class="is-rounded is-centered" src="src/sparkler-677774_1920.jpg">
+        </figure>
+    <br>
+        <div class="columns is-centered">
+            <p class="column is-6 has-text-justified">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi dolorem molestiae non laborum nemo cumque at, facere, beatae quasi quod doloribus neque, quaerat natus perspiciatis architecto eos porro soluta. Doloribus cumque optio a vel non eos facilis cupiditate error praesentium quod quis nemo quaerat fugiat, illum tenetur sapiente voluptas accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis natus illum illo unde? Esse consectetur dolorem explicabo facere saepe quibusdam ratione pariatur sed, atque earum doloribus nobis. Esse corporis nam quisquam iste sequi pariatur, aut dolores. Reprehenderit, placeat distinctio.
+            </p>
+        </div>
+    </section>
+
+<br><br>
+<!-- Section Réalisations -->
+<hr>
+
+    <section class="container">
+        <h2 class="title is-1 has-text-centered" style="font-family: kaushan script;">Mes Réalisations</h2>
+        
+        <div class="columns is-multiline is-centered is-mobile">
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image ">
+                        <img src="src/business-2717063_1920.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Jeanne S.</p>
+                                <p class="subtitle is-6">@jeanne.s</p>
+                            </div>
+                        </div>
+                    
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image ">
+                            <img src="src/programming-1873854_1920.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Jeanne S.</p>
+                                        <p class="subtitle is-6">@jeanne.s</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                    <a href="#">#css</a> <a href="#">#responsive</a>
+                                    <br>
+                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                    <div class="card-image">
+                                <figure class="image ">
+                                <img src="src/code-944499_1280.jpg" alt="Placeholder image">
+                                </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Jeanne S.</p>
+                                        <p class="subtitle is-6">@jeanne.s</p>
+                                    </div>
+                        </div>
+                    
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                    <div class="card-image">
+                                <figure class="image ">
+                                <img src="src/structure-620304_1920.jpg" alt="Placeholder image">
+                                </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Jeanne S.</p>
+                                        <p class="subtitle is-6">@jeanne.s</p>
+                                    </div>
+                        </div>
+                    
+                        <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                    <a href="#">#css</a> <a href="#">#responsive</a>
+                                    <br>
+                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image ">
+                        <img src="src/data-5606639_1920.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Jeanne S.</p>
+                                <p class="subtitle is-6">@jeanne.s</p>
+                            </div>
+                        </div>
+                    
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image ">
+                        <img src="src/laptop-1459578_1920.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Jeanne S.</p>
+                                <p class="subtitle is-6">@jeanne.s</p>
+                            </div>
+                        </div>
+                    
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                    <div class="card-image">
+                                <figure class="image ">
+                                <img src="src/programming-1873854_1920.png" alt="Placeholder image">
+                                </figure>
+                    </div>
+                    <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Jeanne S.</p>
+                                        <p class="subtitle is-6">@jeanne.s</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                    <a href="#">#css</a> <a href="#">#responsive</a>
+                                    <br>
+                                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image ">
+                        <img src="src/business-2717063_1920.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Jeanne S.</p>
+                                <p class="subtitle is-6">@jeanne.s</p>
+                            </div>
+                        </div>
+                    
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image ">
+                        <img src="src/data-5606639_1920.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Jeanne S.</p>
+                                <p class="subtitle is-6">@jeanne.s</p>
+                            </div>
+                        </div>
+                    
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<br><br>
+
+<!-- Partie Contact -->
+<hr>
+
+<br><br>
+
+    <section class="container">
+        <h2 class="title is-1 has-text-centered" style="font-family: kaushan script;">Contactez-moi</h2>
+   
+        <div class="field has-text-centered">
+        
+            <button class="button is-rounded is-medium" onclick="location.href='mailto:angeliquejeanne.simon@gmail.com';">Contact Me</button>
+        </div>
+
+    </section>
+
+<br><br>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>&copy; Tout droits réservés. License MIT.</p>
+    </div>
+</footer>
 
 </body>
 </html>
