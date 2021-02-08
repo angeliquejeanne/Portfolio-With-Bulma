@@ -1,0 +1,54 @@
+body {
+    background-color: lightgrey;
+}
+.navbar {
+    background-color: snow;
+}
+.navbar-item {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.is-desktop {
+    background-color: lightgrey;
+    height: 100vh;
+}
+.img-right {
+    margin-top: 10px;
+    height: 100%;
+}
+
+.button {
+    color: black;
+    background-color: snow;
+    border: 1px solid black;
+    font-weight: bold;
+}
+.button:hover {
+    color: black;
+    background-color: grey;
+    border: 1px solid black;
+}
+
+#home .hero-body .container .title {
+    color: black;
+}
+#home .hero-body .container .subtitle {
+    color: black;
+}
+
+.about {
+    background-color: snow;
+}
+.card {
+    border-radius: 20px;
+}
+.card-image .image img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+@media screen and (max-width: 1024px) {
+    .img-right {
+        display: none;
+    }
+}
